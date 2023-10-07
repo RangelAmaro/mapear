@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte);
+}
+:root{
+    --amarelo-c: #ebdb00;
+    --amarelo-m: #958c00;
+    --azul-m: #0F7394;
+    --vinho-m: #941E3C;
+    --verde-c: #6bbe66;
+    --verde-m: #5E7813;
+    --preto1: #0f0f0f;
+    --cinza-c: #3d3d3d;
+    --preto2: #202020;
+    --laranja-m: #f96854;
+    --vermelho-m: #A51D00;
+    --vermelho-c: #f52d00;
+    --roxo-m: #7909BD;
+    --branco1: #f2f2f2;
+    --branco-fff: #fff;
+    --invisivel: #00000000;
+    --fonte: 'Maven Pro', sans-serif;
+    --borda-radius: 12px;
+}
+.modoclaro:root{
+    --amarelo-c: #958c00;
+    --amarelo-m: #958c00;
+    --azul-m: #0F7394;
+    --vinho-m: #941E3C;
+    --verde-c: #6bbe66;
+    --verde-m: #5E7813;
+    --preto1: #f2f2f2;
+    --cinza-c: #d8d8d8;
+    --preto2: #dadada;
+    --laranja-m: #f96854;
+    --vermelho-m: #A51D00;
+    --vermelho-c: #f52d00;
+    --roxo-m: #7909BD;
+    --branco1: #0f0f0f;
+    --branco-fff: #000;
+}
+body{
+    background-color: var(--preto1);
+    color: var(--branco1);
+    margin: 0 20px 0 20px;
+    transition: 0.6s;
+}
+a{
+    color: var(--azul-m);
+}
+
+/*----------HEADER LOGADO----------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--preto2);
+    margin: 0 -20px 0 -20px;
+    padding: 0 25px 0 25px;
+    box-shadow: 0px 0px 12px 1px var(--preto2);
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.icon-pop-up-navegacao-header{
+    fill: var(--branco1);
+    width: 45px;
+    height: 45px;
+}
+.icon-modo-claro{
+    fill: var(--amarelo-c);
+    width: 21px;
+    height: 21px;
+}
+.icon-modo-escuro{
+    fill: var(--branco1);
+    width: 21px;
+    height: 21px;
+}
+.svg-container{
+    display: none;
+}
+
+.svg-container.active{
+    display: block;
+}
+/* HEADER LOGADO */
+/*----------STATUS SERVIÇO----------*/
+.status-total{
+    margin: 15px 0 22px 0;
+}
+.visor-online{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+.svg-visor-online{
+    fill: var(--verde-c);
+    width: 8px;
+    align-items: center;
+    margin-top: 2px;
+}
+/* STATUS SERVIÇO */
+/*----------LISTAR FERRAMENTAS----------*/
+.todas-ferramentas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    align-items: stretch;
+}
+.titulo-chamando-todas-ferramentas{
+    color: var(--branco1);
+    text-align: center;
+}
+.a-ferramenta-solo{
+    color: var(--branco1);
+    text-decoration: none;
+    width: 100%;
+}
+@media (min-width: 500px){
+    .a-ferramenta-solo{
+        max-width: 400px;
+    }
+
+}
+@media (min-width: 718px){
+    .a-ferramenta-solo{
+        max-width: 300px;
+    }
+}
+.ferramenta-solo{
+    padding: 12px;
+    border-radius: var(--borda-radius);
+    margin: 15px 0 15px 0;
+    background-color: var(--preto2);
+}
+.ferramenta-solo-seo{
+    border: 2px solid var(--amarelo-m);
+    box-shadow: 0px 0px 12px 1px var(--amarelo-m);
+}
+.ferramenta-solo-css{
+    border: 2px solid var(--azul-m);
+    box-shadow: 0px 0px 12px 1px var(--azul-m);
+}
+.ferramenta-solo-scripts{
+    border: 2px solid var(--vinho-m);
+    box-shadow: 0px 0px 12px 1px var(--vinho-m);
+}
+.ferramenta-solo-links-total{
+    border: 2px solid var(--verde-m);
+    box-shadow: 0px 0px 12px 1px var(--verde-m);
+}
+.ferramenta-solo-links{
+    border: 2px solid var(--laranja-m);
+    box-shadow: 0px 0px 12px 1px var(--laranja-m);
+}
+.ferramenta-solo-textos{
+    border: 2px solid var(--vermelho-m);
+    box-shadow: 0px 0px 12px 1px var(--vermelho-m);
+}
+.ferramenta-solo-img{
+    border: 2px solid var(--roxo-m);
+    box-shadow: 0px 0px 12px 1px var(--roxo-m);
+}
+.svg-solo-seo{
+    background-color: var(--amarelo-m);
+}
+.svg-solo-css{
+    background-color: var(--azul-m);
+}
+.svg-solo-scripts{
+    background-color: var(--vinho-m);
+}
+.svg-solo-links-total{
+    background-color: var(--verde-m);
+}
+.svg-solo-links{
+    background-color: var(--laranja-m);
+}
+.svg-solo-textos{
+    background-color: var(--vermelho-m);
+}
+.svg-solo-img{
+    background-color: var(--roxo-m);
+}
+.icon-titulo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.svg-ferramenta-solo{
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    padding: 1px;
+    border-radius: 50%;
+}
+.titulo-ferramenta-solo{
+    font-size: 20px;
+}
+strong{
+    font-weight: 800;
+}
+.hr-ferramenta-solo{
+    color: var(--branco1);
+    margin: 8px 0 8px 0;
+    width: 100%;
+}
+.descricao-ferramenta-solo{
+    font-size: 13px;
+    text-align: center;
+}
+/* LISTAR FERRAMENTAS */
+/*----------AVISO HOME SEGURANÇA----------*/
+.aviso-da-seguranca{
+    background-color: var(--cinza-c);
+    padding: 8px;
+    border: 1px solid var(--branco1);
+    border-radius: var(--borda-radius);
+    margin: 10px auto;
+    max-width: 400px;
+    justify-content: center;
+    display: block;
+}
+.titulo-x{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.btn-aviso-da-seguranca{
+    background-color: var(--invisivel);
+    border: none;
+}
+.svg-titulo-x{
+    fill: var(--vermelho-c);
+    width: 22px;
+    height: 22px;
+}
+/* AVISO HOME SEGURANÇA */
+/*----------CONTEUDO TXT HOME----------*/
+.conteudo-padrao{
+    margin: 23px 5vw;
+}
+.conteudo-padrao h2{
+    margin: 9px 0;
+    text-align: center;
+}
+.conteudo-padrao p{
+    margin: 5px 0;
+    font-size: 110%;
+}
+/*CONTEUDO TXT HOME*/
+/*----------FOOTER----------*/
+.voltar-ao-topo{
+    color: var(--branco1);
+    margin-bottom: 5px;
+}
+footer{
+    margin: 20px -20px 0 -20px;
+    padding: 15px;
+    background-color: var(--preto2);
+    text-align: center;
+}
+/*FOOTER*/
